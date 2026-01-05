@@ -6699,3 +6699,211 @@ blockquote {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; } }
+
+
+
+
+
+
+
+
+
+
+
+      .skills-section {
+    padding: 80px 20px;
+  }
+
+ 
+
+  .skills-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+  }
+
+  .skill-card {
+    background: #121212;
+    border-radius: 16px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 30px rgba(190, 255, 0, 0.18);
+  }
+
+  .skill-card h3 {
+    font-size: 16px;
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
+
+  .progress-bar {
+    background: #1f1f1f;
+    height: 8px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .progress-bar span {
+    display: block;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #beff00, #8cff00);
+    border-radius: 20px;
+    transition: width 1.6s ease;
+  }
+
+  .experience {
+    display: block;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #beff00;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .skill-card:hover .experience {
+    opacity: 1;
+  }
+
+  /* Tech Stack */
+  .tech-stack {
+    max-width: 900px;
+    margin: 20px auto 0;
+    background: #121212;
+    padding: 35px;
+    border-radius: 16px;
+  }
+
+  .tech-stack h3 {
+    margin-bottom: 25px;
+    color: #beff00;
+  }
+
+  .tech-stack p {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #dcdcdc;
+  }
+
+  .tech-stack strong {
+    color: #ffffff;
+  }
+
+
+
+
+
+
+
+
+
+ 
+
+  .timeline-section .timeline-title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 70px;
+  }
+
+  .timeline-section .timeline {
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    padding-left: 30px;
+  }
+
+  /* Vertical line */
+  .timeline-section .timeline::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(#beff00, transparent);
+  }
+
+  .timeline-section .timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+    padding-left: 40px;
+  }
+
+  /* Glowing node */
+  .timeline-section .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background: #beff00;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(190, 255, 0, 0.8);
+  }
+
+  .timeline-section .timeline-card {
+    background: #121212;
+    padding: 25px;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+  }
+
+  .timeline-section .timeline-card:hover {
+    transform: translateX(6px);
+    box-shadow: 0 0 30px rgba(190, 255, 0, 0.18);
+  }
+
+  .timeline-section .timeline-card h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+
+  .timeline-section .timeline-card p {
+    margin: 0 0 15px;
+    font-size: 15px;
+    color: #d6d6d6;
+  }
+
+  /* Achievements (hidden by default) */
+  .timeline-section .achievements {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+
+  .timeline-section .timeline-card:hover .achievements {
+    opacity: 1;
+    max-height: 200px;
+  }
+
+  .timeline-section .achievements li {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #beff00;
+  }
+
+  /* Tech badges */
+  .timeline-section .badges {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .timeline-section .badge {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #1f1f1f;
+    border: 1px solid #2a2a2a;
+    color: #beff00;
+  }
